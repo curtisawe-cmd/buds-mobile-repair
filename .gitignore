@@ -1,0 +1,8 @@
+# Source logo photo + intermediates (not needed on the live site)
+*.HEIC
+logo.png
+logo-cropped.png
+# Local render/scratch files
+logo-preview.png
+header-check.png
+logopreview.html
