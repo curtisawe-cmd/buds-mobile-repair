@@ -2,7 +2,10 @@
 *.HEIC
 logo.png
 logo-cropped.png
-# Local render/scratch files
+# Local render/scratch files (previews only)
 logo-preview.png
 header-check.png
 logopreview.html
+hero-*.png
+m[0-9]*.png
+w[0-9]*.png
