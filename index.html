@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bud's Mobile Repair LLC | We Come to You | On-Site Auto Repair</title>
-<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="icon" type="image/png" href="bmr-logo.png">
 <meta name="description" content="Bud's Mobile Repair LLC is a professional mobile auto mechanic. We come to your home or office for diagnostics, brakes, batteries, electrical, oil changes and more. Call today.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,12 +65,8 @@
   }
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand-mark{
-    width:48px;height:48px;flex:none;display:grid;place-items:center;
-  }
-  .brand-mark img,.brand-mark svg{width:48px;height:48px;display:block}
-  .brand-name{font-weight:700;font-size:1.18rem;letter-spacing:.03em;text-transform:uppercase;line-height:1}
-  .brand-sub{font-size:.66rem;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;font-family:'Inter';font-weight:600}
+  .brand-logo{height:54px;width:auto;display:block}
+  .foot-brand .brand-logo{height:62px}
   .nav{display:flex;align-items:center;gap:30px}
   .nav a{font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);transition:color .15s}
   .nav a:hover{color:var(--text)}
@@ -92,7 +88,7 @@
   }
   .hero-inner{position:relative;padding:82px 0 92px;display:flex;align-items:center;gap:48px}
   .hero-text{flex:1 1 auto;max-width:640px;min-width:0}
-  .hero-art{flex:none;width:clamp(240px,30vw,400px)}
+  .hero-art{flex:none;width:clamp(260px,32vw,440px)}
   .hero-art img{width:100%;height:auto;display:block;filter:drop-shadow(0 24px 50px rgba(0,0,0,.55))}
   .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
   .badge{
@@ -127,7 +123,7 @@
   .sec-head p{color:var(--muted);font-size:1.08rem;margin-top:14px}
 
   /* ---------- Services ---------- */
-  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
   .card{
     background:linear-gradient(180deg,var(--panel-2),var(--panel));
     border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;
@@ -232,7 +228,7 @@
     .stat:nth-child(3){border-left:0}
     .hero-inner{flex-direction:column;align-items:flex-start;gap:24px}
     .hero-text{width:100%;max-width:none}
-    .hero-art{order:-1;width:140px}
+    .hero-art{order:-1;width:230px}
   }
   @media(max-width:720px){
     .nav{display:none}
@@ -282,14 +278,8 @@
 <!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav-inner">
-    <a href="#top" class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <img src="logo.svg" alt="Bud's Mobile Repair logo">
-      </span>
-      <span>
-        <span class="brand-name">Bud's Mobile Repair</span><br>
-        <span class="brand-sub">LLC · We Come To You</span>
-      </span>
+    <a href="#top" class="brand" aria-label="Bud's Mobile Repair LLC — home">
+      <img class="brand-logo" src="bmr-logo.png" alt="Bud's Mobile Repair LLC">
     </a>
     <nav class="nav" id="nav">
       <a href="#services">Services</a>
@@ -327,7 +317,7 @@
       Serving all of Wayne &amp; Monroe counties, NY, 6 days a week.
     </div>
     </div><!-- /hero-text -->
-    <div class="hero-art"><img src="logo.svg" alt="Bud's Mobile Repair logo"></div>
+    <div class="hero-art"><img src="bmr-logo.png" alt="Bud's Mobile Repair LLC logo"></div>
   </div>
 </section>
 
@@ -369,6 +359,11 @@
         <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 14V8a2 2 0 0 1 2-2h7l3 3h2a2 2 0 0 1 2 2v3"/><path d="M4 14h16M7 18h4"/><path d="M17 15c1.2 1.5 2 2.6 2 3.5a2 2 0 0 1-4 0c0-.9.8-2 2-3.5z"/></svg></div>
         <h3>Oil &amp; Routine Maintenance</h3>
         <p>Oil changes, fluids, filters, tune-ups, and pre-trip inspections to keep your vehicle running mile after mile.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 13v-2h2l1.6-3h4.4l1.6 3H20v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-1H3z"/><path d="M8 8V5h5"/><path d="M20 11h1v3"/><path d="M7 18v2M16 18v2"/></svg></div>
+        <h3>Small Engine Repair</h3>
+        <p>Mowers, generators, snowblowers, pressure washers and more, tuned up, pull-started, and running like new.</p>
       </div>
     </div>
   </div>
@@ -495,6 +490,7 @@
             <option>Brakes &amp; Suspension</option>
             <option>Batteries &amp; Electrical</option>
             <option>Oil &amp; Maintenance</option>
+            <option>Small Engine Repair</option>
             <option>Not Sure / Other</option>
           </select>
         </div>
@@ -511,11 +507,8 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#top" class="brand">
-          <span class="brand-mark" aria-hidden="true">
-            <img src="logo.svg" alt="Bud's Mobile Repair logo">
-          </span>
-          <span><span class="brand-name">Bud's Mobile Repair</span><br><span class="brand-sub">LLC · We Come To You</span></span>
+        <a href="#top" class="brand" aria-label="Bud's Mobile Repair LLC — home">
+          <img class="brand-logo" src="bmr-logo.png" alt="Bud's Mobile Repair LLC">
         </a>
         <p>Professional mobile auto repair brought right to your driveway. Honest work, fair prices, no shop required.</p>
       </div>
@@ -525,6 +518,7 @@
         <a href="#services">Brakes &amp; Suspension</a>
         <a href="#services">Batteries &amp; Electrical</a>
         <a href="#services">Oil &amp; Maintenance</a>
+        <a href="#services">Small Engine Repair</a>
       </div>
       <div class="foot-col">
         <h4>Company</h4>

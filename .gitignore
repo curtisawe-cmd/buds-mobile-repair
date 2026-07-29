@@ -1,11 +1,15 @@
-# Source logo photo + intermediates (not needed on the live site)
+# Source logo files (not needed on the live site)
 *.HEIC
 logo.png
 logo-cropped.png
+BMR Logo (approved).png
 # Local render/scratch files (previews only)
 logo-preview.png
 header-check.png
 logopreview.html
+lp.html
+lp.png
 hero-*.png
+chk-*.png
 m[0-9]*.png
 w[0-9]*.png
