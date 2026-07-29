@@ -13,3 +13,8 @@ hero-*.png
 chk-*.png
 m[0-9]*.png
 w[0-9]*.png
+
+# Business card (print asset, not part of the website)
+card.html
+card-preview.png
+*.pdf
